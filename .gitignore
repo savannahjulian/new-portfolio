@@ -1,0 +1,8 @@
+site/cache
+site/config/config.php
+site/accounts
+content
+assets/css
+assets/fonts
+assets/avatars
+thumbs
