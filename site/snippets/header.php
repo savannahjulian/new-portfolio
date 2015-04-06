@@ -15,5 +15,9 @@
   <body>
 
     <header>
-      <h1><?= $site->title()->html() ?></h1>
+      <section class="me">
+        <div class="column full">
+          <h1><?= html::a($site->url(), $site->title()->html()) ?></h1>
+        </div>
+      </section>
     </header>

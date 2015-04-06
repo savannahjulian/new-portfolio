@@ -1,0 +1,39 @@
+*
+  box-sizing: border-box
+
+header,
+main,
+footer
+
+section
+  max-width: $page-width-max
+  margin: 0 auto
+  font-size: 0
+
+  & + section
+    margin-top: 4rem
+
+.column
+  font-size: 1rem
+  display: inline-block
+  vertical-align: top
+  padding: 0 1rem
+
+  &.half
+    width: (100% / 2)
+
+  &.third
+    width: (100% / 3)
+
+  &.two-thirds
+    width: (100% / 3) * 2
+
+  &.quarter
+    width: (100% / 4)
+
+  &.three-quarters
+    width: (100% / 4) * 3
+
+img
+  display: block
+  max-width: 100%
