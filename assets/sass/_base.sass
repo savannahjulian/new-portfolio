@@ -5,19 +5,38 @@ header,
 main,
 footer
 
+body
+  margin: 0
+
 section
+  & + section
+    margin-top: 4rem
+
+  &.me
+    padding: 3em 0
+
+  &.project
+    background: grey
+    padding: 3em 0
+
+  &.about
+    border-top: 1px solid black
+    border-bottom: 1px solid black
+    padding: 3em 0
+
+.wrapper
   max-width: $page-width-max
   margin: 0 auto
   font-size: 0
-
-  & + section
-    margin-top: 4rem
 
 .column
   font-size: 1rem
   display: inline-block
   vertical-align: top
   padding: 0 1rem
+
+  &.full
+    width: 100%
 
   &.half
     width: (100% / 2)
@@ -37,3 +56,7 @@ section
 img
   display: block
   max-width: 100%
+  margin: 0 auto
+
+.center
+  text-align: center

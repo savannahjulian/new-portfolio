@@ -16,8 +16,10 @@
 
     <header>
       <section class="me">
-        <div class="column full">
-          <h1><?= html::a($site->url(), $site->title()->html()) ?></h1>
+        <div class="wrapper">
+          <div class="column full">
+            <h1><?= html::a($site->url(), $site->author()->html()) ?></h1>
+          </div>
         </div>
       </section>
     </header>
