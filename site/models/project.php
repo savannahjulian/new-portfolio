@@ -1,12 +1,16 @@
 <? class ProjectPage extends Page {
   public function cover () {
     if ( !$this->thumbnail()->empty() && $thumbnail = $this->imageFromField($this->thumbnail()) ) {
-      return html::img($thumbnail->url(), ['alt' => $thumbnail->title()]);
+      return $thumbnail;
     } else if ( $this->hasImages() ) {
-      return html::img($this->images()->first());
+      return $this->images()->first();
     } else {
-      return "No Cover Image Found";
+      return false;
     }
+  }
+
+  public function projectImages () {
+    return $this->images()->not($this->cover()->filename());
   }
   
   public function imageFromField ($field = null) {
