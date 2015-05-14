@@ -6,7 +6,13 @@
     <div class="column quarter">
       <div class="experience">
         <h5>Experience.</h5>
-        <?= $site->experience()->kirbytext() ?>
+        <ul>
+          <? foreach ( $site->experience()->yaml() as $position ) { ?>
+            <li>
+              <h6><?= html::a($position['link'], $position['name'], ['target' => '_blank']) ?></h6>
+              <span><?= $position['notes'] ?></span>
+          <? } ?>
+        </ul>
       </div>
       <div class="elsewhere">
         <h5>Elsewhere.</h5>

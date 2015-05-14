@@ -34,8 +34,20 @@ fields:
     type: textarea
   experience:
     label: Experience
-    type: textarea
-    help: This ought to be a list— the space is limited!
+    type: structure
+    entry: >
+      <a href="{{link}}">{{name}}</a>
+      <p style="font-style: italic">{{notes}}</p>
+    fields:
+      name:
+        label: Link Label
+        type: text
+      link:
+        label: URL
+        type: url
+      notes:
+        label: Notes
+        type: textarea
   skills:
     label: Skills and Interests
     type: textarea

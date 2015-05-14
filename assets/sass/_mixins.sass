@@ -1,7 +1,25 @@
+// Screen Sizes
+
 @mixin mobile
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: $breakpoint-mobile)
     @content
 
 @mixin tablet
-  @media screen and (max-width: 1024px)
+  @media screen and (max-width: $breakpoint-tablet)
     @content
+
+@mixin desktop
+  @media screen and (min-width: $breakpoint-tablet)
+    @content
+
+@mixin layer-top
+  z-index: 1000
+
+@mixin layer-middle
+  z-index: 750
+
+@mixin layer-lower
+  z-index: 500
+
+@mixin layer-bottom
+  z-index: 0

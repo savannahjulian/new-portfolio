@@ -9,8 +9,11 @@
     <meta name="description" content="<?= $site->description()->html() ?>">
     <meta name="keywords" content="<?= $site->keywords()->html() ?>">
 
-    <script src="//use.typekit.net/xsw7zbk.js"></script>
+    <?= js('//use.typekit.net/xsw7zbk.js') ?>
     <script>try{Typekit.load();}catch(e){}</script>
+    <?= js('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js') ?>
+    <?= js('assets/js/jquery.flexslider-min.js') ?>
+    <?= js('assets/js/slj.js') ?>
 
     <?= css('assets/css/slj.css') ?>
 

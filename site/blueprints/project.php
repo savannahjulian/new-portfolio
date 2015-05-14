@@ -19,6 +19,10 @@ fields:
   text:
     label: Description
     type:  textarea
+  hide_description:
+    label: Hide Descriptive Text?
+    type: toggle
+    default: no
   thumbnail:
     label: Thumbnail Image
     type: select

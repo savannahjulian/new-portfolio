@@ -1,0 +1,44 @@
+section.project
+  background: grey
+  padding: 9em 0
+
+  &.light
+    color: $color-black
+
+  &.dark
+    color: $color-white
+
+  .project-images
+    position: relative
+
+    .flex-control-nav
+      display: none
+      li
+        display: inline-block
+        list-style: none
+      
+    .flex-direction-nav
+      position: absolute
+      top: 100%
+      width: 100%
+      left: 0
+
+section.project-list
+  +layer-middle
+  background-color: $color-white
+  padding: 4em 0
+
+
+section.project-navigation
+  .wrapper
+    max-width: none
+
+  .project-title
+    display: none
+
+  +layer-bottom
+  position: fixed
+  top: 50%
+  left: 0
+  width: 100%
+  margin: -0.5rem 0 0 0
