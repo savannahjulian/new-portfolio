@@ -8,21 +8,43 @@ footer
 body
   margin: 0
 
+header
+  position: fixed
+  padding: 2em 0
+  width: 100%
+
 section
   & + section
     margin-top: 4rem
 
   &.me
-    padding: 3em 0
+    //padding: 3em 0
+
+  &.project-navigation
+    position: fixed
+    top: 60%
+    left: 0
+    width: 100%
+    margin: 0
 
   &.project
     background: grey
-    padding: 3em 0
+    padding: 9em 0
+
+  &.project-list
+    padding: 4em 0
 
   &.about
     border-top: 1px solid black
     border-bottom: 1px solid black
     padding: 3em 0
+
+  &.copyright
+    padding: 1em
+
+footer
+  p
+    margin: 0
 
 .wrapper
   max-width: $page-width-max
@@ -60,3 +82,19 @@ img
 
 .center
   text-align: center
+
+a
+  text-decoration: underline
+  color: black
+
+ul
+  margin-bottom: 2em
+  padding: 0
+  list-style-type: none
+
+  li
+    margin: 0.25em 0
+
+.statement
+  p
+    font-size: 1.25em

@@ -1,9 +1,9 @@
 <? snippet('header') ?>
 
 <main>
-  <section class="project">
+  <section class="project <?= $page->lightness() ?>" style="background-color: <?= $page->color() ?>;">
     <div class="wrapper">
-      <div class="column full center">
+      <div class="column full">
         <h2><?= $page->title()->html() ?></h2>
         <?= $page->text()->kirbytext() ?>
         <? foreach ( $images as $image ) { ?>
@@ -27,7 +27,7 @@
           &larr; <?= html::a($page->prevVisible()->url(), $page->prevVisible()->title()) ?>
         <? } ?>
       </div>
-      <div class="column half">
+      <div class="column half text-right">
         <? if ( $page->hasNext() ) { ?>
           <?= html::a($page->nextVisible()->url(), $page->nextVisible()->title()) ?> &rarr;
         <? } ?>

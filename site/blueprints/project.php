@@ -27,3 +27,6 @@ fields:
       fetch: images
       text: '{{title}}'
       value: '{{filename}}'
+  color:
+    label: Project Highlight Color
+    type: color

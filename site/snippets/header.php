@@ -9,6 +9,9 @@
     <meta name="description" content="<?= $site->description()->html() ?>">
     <meta name="keywords" content="<?= $site->keywords()->html() ?>">
 
+    <script src="//use.typekit.net/xsw7zbk.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
     <?= css('assets/css/slj.css') ?>
 
   </head>
