@@ -10,7 +10,7 @@
           <? foreach ( $site->experience()->yaml() as $position ) { ?>
             <li>
               <h6><?= html::a($position['link'], $position['name'], ['target' => '_blank']) ?></h6>
-              <span><?= $position['notes'] ?></span>
+              <span class="notes"><?= $position['notes'] ?></span>
           <? } ?>
         </ul>
       </div>
@@ -18,7 +18,7 @@
         <h5>Elsewhere.</h5>
         <ul>
           <? foreach ( $site->elsewhere()->yaml() as $link ) { ?>
-            <li><?= html::a($link['link'], $link['name']) ?></li>
+            <li><h6><?= html::a($link['link'], $link['name'], ['target' => '_blank']) ?></h6></li>
           <? } ?>
         </ul>
       </div>
@@ -26,7 +26,7 @@
     <div class="column quarter">
       <div class="skills">
         <h5>Skills.</h5>
-        <?= $site->skills()->kirbytext() ?>
+        <h6><?= $site->skills()->kirbytext() ?></h6>
       </div> 
     </div>
   </div>

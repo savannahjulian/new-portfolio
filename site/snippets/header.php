@@ -9,6 +9,8 @@
     <meta name="description" content="<?= $site->description()->html() ?>">
     <meta name="keywords" content="<?= $site->keywords()->html() ?>">
 
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
     <?= js('//use.typekit.net/xsw7zbk.js') ?>
     <script>try{Typekit.load();}catch(e){}</script>
     <?= js('https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js') ?>

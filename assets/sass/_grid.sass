@@ -2,6 +2,7 @@
   max-width: $page-width-max
   margin: 0 auto
   font-size: 0
+
   &.centered-layout
     text-align: center
     .column
@@ -40,6 +41,8 @@
 
   &.quarter
     width: (100% / 4)
+    +tablet
+      width: 50%
     +mobile
       width: 100%
 

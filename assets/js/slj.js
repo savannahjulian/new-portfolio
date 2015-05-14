@@ -15,5 +15,7 @@
     $('.carousel-prev').on('click', function () {
       slider.flexslider('prev');
     });
+
+    if ( $('.project-images .slides .image').length <= 1 ) $('.carousel-controls').hide()
   });
 })(this);

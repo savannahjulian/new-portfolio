@@ -3,7 +3,7 @@
     <div class="column half">
       <? if ( $page->hasPrev() ) { ?>
         <a class="previous" href="<?= $page->prevVisible()->url() ?>">
-          <span class="arrow">&larr;</span>
+          <span class="arrow">&LeftTeeArrow;</span>
           <span class="project-title"><?= $page->prevVisible()->title() ?></span>
         </a>
       <? } ?>
@@ -12,7 +12,7 @@
       <? if ( $page->hasNext() ) { ?>
         <a class="previous" href="<?= $page->nextVisible()->url() ?>">
           <span class="project-title"><?= $page->nextVisible()->title() ?></span>
-          <span class="arrow">&rarr;</span>
+          <span class="arrow">&RightTeeArrow;</span>
         </a>
       <? } ?>
     </div>

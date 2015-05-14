@@ -1,12 +1,34 @@
 section.project
   background: grey
-  padding: 9em 0
+  padding-top: 8em
+  padding-bottom: 8em
+
+  +mobile
+    padding-bottom: 5em
 
   &.light
     color: $color-black
 
+    a
+      color: inherit
+      border-bottom: 1px solid $color-black
+
+      &.button
+        color: inherit
+        border: 1px solid $color-black
+        padding: 0.75em 2em
+
   &.dark
     color: $color-white
+
+    a
+      color: inherit
+      border-bottom: 1px solid $color-white
+
+      &.button
+        color: inherit
+        border: 1px solid $color-white
+        padding: 0.75em 2em
 
   .project-images
     position: relative
@@ -24,17 +46,40 @@ section.project
       width: 100%
       left: 0
 
+  .carousel-prev,
+  .carousel-next
+    cursor: pointer
+
+  .project-description
+    margin-top: 5em
+    text-align: center
+    +mobile
+      margin-top: 4em
+
 section.project-list
   +layer-middle
   background-color: $color-white
-  padding: 4em 0
+  padding-top: 8em
+  padding-bottom: 8em
+
+  .thumbnail
+    margin: 3em 0
+
+  +mobile
+    padding-top: 4em
 
 
 section.project-navigation
   .wrapper
     max-width: none
 
+  .arrow
+    font-size: 2em
+
   .project-title
+    display: none
+
+  +mobile
     display: none
 
   +layer-bottom
@@ -43,3 +88,8 @@ section.project-navigation
   left: 0
   width: 100%
   margin: -0.5rem 0 0 0
+
+  a
+    text-decoration: none
+    //padding: 2em
+    border-bottom: none

@@ -4,7 +4,7 @@
       <div class="column <?= SLJ::parts_of_whole(4) ?> project">
         <? foreach ($project_group as $project ) { ?>
           <? if ( $project->cover() ) { ?>
-            <?= html::a($project->url(), html::img($project->cover()->url())) ?>
+            <div class="thumbnail"><?= html::a($project->url(), html::img($project->cover()->url())) ?></div>
           <? } else { ?>
             <?= $project->title()->html() ?>
           <? } ?>
